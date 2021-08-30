@@ -298,9 +298,9 @@ body {
       .project__img {
         display: none; } }
     .project__img--1 {
-      background-image: url(/portfolio/img/swaplang-small.jpeg); }
+      background-image: url(../img/swaplang-small.jpeg); }
     .project__img--2 {
-      background-image: url(/portfolio/img/portfolio-small.jpeg); }
+      background-image: url(../img/portfolio-small.jpeg); }
   .project__img-container {
     align-items: center;
     display: flex;
