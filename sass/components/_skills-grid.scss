@@ -1,0 +1,55 @@
+.skills-grid {
+    align-items: stretch;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 60rem;
+    justify-items: stretch;
+    max-height: 100%;
+    max-width: 100%;
+    perspective: 1000px;
+    width: 100%;
+
+    &__img {
+        $blur-radius: 0.5rem;
+        $brightness-value: 110%;
+        $shadow-opacity: 0.3;
+
+        filter: brightness($brightness-value) drop-shadow(0 0 $blur-radius rgba($color-white, $shadow-opacity));
+        max-height: 10rem;
+        max-width: 80%;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__link {
+        text-align: center;
+    }
+
+    &__skill {
+        align-items: center;
+        border-radius: $default-border-radius;
+        box-shadow: 0 0 2rem 0 rgba($color-black, 0.2);
+        display: flex;
+        justify-content: center;
+        transition: transform .5s ease-in-out;
+        transform: rotateY(-25deg);
+
+        &:nth-of-type(odd) {
+            background-color: $color-4;
+        }
+    
+        &:nth-of-type(even) {
+            background-color: $color-grey;
+        }
+    }
+
+    &.activated &__skill {
+        transform: rotateY(0);
+
+    }
+}

@@ -1,0 +1,31 @@
+// ABSTRACTS
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// BASE
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+// COMPONENTS
+
+@import 'components/button';
+@import 'components/heading';
+@import 'components/modal';
+@import 'components/profile-img';
+@import 'components/project-container';
+@import 'components/project';
+@import 'components/section';
+@import 'components/skills-grid';
+@import 'components/socials';
+@import 'components/unordered-list';
+
+// LAYOUT
+
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/navigation';
+

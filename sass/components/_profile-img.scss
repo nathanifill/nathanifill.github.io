@@ -1,0 +1,18 @@
+.profile-img {
+
+    &__img {
+        border-radius: 1rem;
+        box-shadow: $default-box-shadow;
+        max-height: 50vh;
+        max-width: 100%;
+        height: auto;
+        filter: brightness(20%);
+        transition: all .2s ease-in-out;
+
+        &.activated {
+            transform: scale(1.05);
+            filter: brightness(120%);
+        }
+    }
+
+}

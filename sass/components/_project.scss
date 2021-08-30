@@ -1,0 +1,111 @@
+.project {
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem 0 rgba($color-black, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem;
+    margin: 3rem 0;
+    min-height: 50vh;
+    scroll-margin-top: 5rem;
+    transition: all .2s ease-out;
+    width: 100%;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    &__description {
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin: 3rem 0;
+        max-width: 75%;
+
+        @include respond(phone) {
+            max-width: 100%;
+        }
+    }
+
+    &__img {
+        background-position: top center;
+        background-size: cover;
+        border-radius: 1rem;
+        height: 22.4rem; /* 1920 x 1080 proportions */
+        width: 40rem;
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        &--1 {
+            background-image: url(/portfolio/img/swaplang-small.jpeg);
+        }
+
+        &--2 {
+            background-image: url(/portfolio/img/portfolio-small.jpeg);
+        }
+    }
+
+    &__img-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include respond(tab-port) {
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__logo {
+        width: 10rem;
+    }
+
+    &__tech {
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        margin: 1em 0;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        box-shadow: 0 0 2rem 0 rgba($color-black, 0.15);
+        transform: scale(1.02);
+
+        & .project__img {
+            animation: scrollScreenshot 10s ease-in-out forwards;
+        }
+    }
+
+    &:nth-child(odd) &__info .btn--demo {
+        box-shadow: 0rem 0rem 0.5rem rgba($project-bg-color-even, 0.3);
+        background-color: $project-bg-color-even;
+        color: $project-bg-color-odd;
+
+        &:hover {
+            box-shadow: 0rem 0rem 1rem rgba($project-bg-color-even, 0.6);
+        }
+    }
+
+    &:nth-child(even) &__info .btn--demo {
+        box-shadow: 0rem 0rem 0.5rem rgba($project-bg-color-odd, 0.3);
+        background-color: $project-bg-color-odd;
+        color: $project-bg-color-even;
+
+        &:hover {
+            box-shadow: 0rem 0rem 1rem rgba($project-bg-color-odd, 0.6);
+        }
+    }
+}

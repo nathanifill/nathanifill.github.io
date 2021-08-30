@@ -1,0 +1,26 @@
+// sets a maximum width
+.u-max-width {
+    max-width: $max-ui-width;
+    margin: 0 auto;
+}
+
+// creates a two column layout
+.u-two-column {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__column {
+        max-width: 45%;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+
+        &__column {
+            margin: 0 0 3rem;
+            max-width: 100%;
+        }
+    }
+}

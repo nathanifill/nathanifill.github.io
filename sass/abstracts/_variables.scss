@@ -1,0 +1,36 @@
+// COLORS
+// Colour theme based around colour scheme below
+/* https://coolors.co/add7f6-87bfff-3f8efc-2667ff-3b28cc */
+
+$color-1: #add7f6;
+$color-2: #87bfff;
+$color-3: #3f8efc;
+$color-4: #2667ff;
+$color-5: #3b28cc;
+
+// colours 1, 2, 3 and 5 are no longer in use but have been kept here for future reference
+
+$color-white: #fffcf9; /* off white */
+$color-black: #0B090D; /* black (was previously #0c090d) */
+$color-grey: #eee;
+
+$color-primary: $color-4;
+
+$project-bg-color-odd: #333;
+$project-bg-color-even: floralwhite; /* alternatives: ivory, linen, oldlace, seashell */
+
+// FONT
+$default-font-size: 1.6rem;
+
+// UI WIDTH
+:root {
+  --max-ui-width: 1200px;
+}
+$max-ui-width: var(--max-ui-width);
+
+// BOX SHADOW
+$default-box-shadow: 0 0 2rem 0 rgba($color-black, 0.3);
+$raised-box-shadow: 0 1.2rem 2.4rem 0 rgba($color-black, 0.4);
+
+// BORDER RADIUS
+$default-border-radius: 5px;

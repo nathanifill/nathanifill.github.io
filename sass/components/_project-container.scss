@@ -1,0 +1,15 @@
+.project-container {
+    & .project:nth-child(odd) {
+        background-color: $project-bg-color-odd;
+        color: $project-bg-color-even;
+    }
+
+    & .project:nth-child(even)  {
+        background-color: $project-bg-color-even;
+        color: $project-bg-color-odd;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
