@@ -6,9 +6,6 @@
 
     @include respond(tab-port) {
         margin: 0;
-    }
-
-    @include respond(phone) {
         max-width: 100%;
     }
 
@@ -26,6 +23,12 @@
             font-size: 3.6rem;
             padding-top: 5rem;
         }
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+
+
     }
 
     &--secondary {
