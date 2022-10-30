@@ -11,6 +11,7 @@
   &__home-icon {
     border-radius: 50%;
     box-shadow: 0 0 4rem rgba($color-white, 1);
+    cursor: pointer;
     max-height: 7rem;
     filter: grayscale(1) sepia(0.5) contrast(0.05) brightness(1.9) blur(1.1px);
     transition: all 3s ease-in-out;
@@ -26,7 +27,7 @@
   &__link {
     display: inline-block;
     color: $color-white;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
@@ -34,10 +35,10 @@
     &::after {
       background: $color-4;
       border-radius: 100px;
-      content: '';
+      content: "";
       display: block;
       height: 2px;
-      transition: width .4s ease-in-out;
+      transition: width 0.4s ease-in-out;
       width: 0;
     }
 
@@ -53,12 +54,11 @@
     align-items: center;
     justify-content: flex-end;
     font-size: 1.6rem;
-    
   }
 
   &__list-item {
     list-style-type: none;
-    padding-left: 5rem; 
+    padding-left: 5rem;
 
     @include respond(phone) {
       &:not(:last-child) {

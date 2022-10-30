@@ -20,7 +20,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0318f3c0e6.js" crossorigin="anonymous"></script>
 
-    <base href="https://www.nathanifill.com/" />
+    <!-- <base href="https://www.nathanifill.com/" /> -->
 </head>
 <body>
     <header class="header">
@@ -40,7 +40,7 @@
                     <a href="https://www.linkedin.com/in/nathanifill" class="nav__link">CV</a>
                 </li>
                 <li class="nav__list-item">
-                    <a href="mailto:hello@nathanifill.com" class="btn btn--white btn--contact-btn">Contact me</a>
+                    <a href="mailto:nathangifill+portfolio@gmail.com" class="btn btn--white btn--contact-btn">Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -56,11 +56,11 @@
             <div class="u-max-width u-two-column">
                 <div class="section__column u-two-column__column">
                     <h2 class="heading heading--secondary">About</h2>
-                    <p class="section__paragraph">I'm a self-taught web developer looking for opportunities to grow my skillset in a professional environment.</p> 
+                    <p class="section__paragraph">I'm a front-end web developer looking for opportunities to grow my skillset in a professional environment.</p> 
                     
-                    <p class="section__paragraph">I have a digital marketing background with a huge wealth of transferable skills. After spending a large chunk of my role automating processes using JavaScript, SQL and Google APIs, I fell in love with web development and the creative aspect of turning code into creations.</p>
+                    <p class="section__paragraph">I have a digital marketing background with a huge wealth of transferable skills. During my four and a half years of experience automating processes using JavaScript, SQL and Google APIs, I fell in love with web development and the creative aspect of turning code into creations.</p>
 
-                    <p class="section__paragraph">My strengths are in JavaScript, HTML and CSS (including Sass) but I'm also familiar with other technologies. You can find out what I'm currently learning in  <a href="#portfolio" class="section__link">the skills section</a> below.</p>
+                    <p class="section__paragraph">My strengths are in JavaScript, HTML, CSS (including Sass) and React but I'm also familiar with other technologies. You can find out what I'm currently learning in <a href="#portfolio" class="section__link">the skills section</a> below.</p>
 
                     <p class="section__paragraph">I have a Master's degree in Mathematics, specialising in programming algorithms for data analysis. The course gave me a solid background in writing applications, problem solving and developing solutions.</p>
 
@@ -80,13 +80,13 @@
                 <div class="project-container">
                     <div class="project project--1" id="project-1">
                         <div class="project__info project__info--1">
-                            <img src="img/php-logo.png" alt="PHP logo" class="project__logo">
+                            <img src="img/tech-logos/php-logo.png" alt="PHP logo" class="project__logo">
                             <p class="project__description">Fully responsive language exchange web app</p>
                             <p class="project__tech">PHP, CSS, SCSS, JavaScript, HTML</p>
-                            <a class="btn btn--project btn--demo" href="https://www.swaplang.com">Live Demo</a>
-                            <a class="btn btn--project btn--cta" href="https://github.com/nathanifill/advanced-language-exchange-website">View Code</a>
+                            <a class="btn btn--project btn--demo" href="https://www.swaplang.com/french/">Live Demo</a>
+                            <a class="btn btn--project btn--cta" onclick="showModal('This app now has paying users so I\'ve made the repository private to ensure that sensitive data like passwords, SSH keys, API keys and other information isn\'t accidently exposed. I\'d be happy to show you the code and talk you through it at an interview though 😉')">View Code</a>
                         </div>
-                        <a class="project__img-container" href="https://www.swaplang.com">
+                        <a class="project__img-container" href="https://www.swaplang.com/french/">
                             <div class="project__img project__img--1">
 
                             </div>
@@ -94,14 +94,28 @@
                     </div>
                     <div class="project project--2" id="project-2">
                         <div class="project__info project__info--2">
-                            <img src="img/HTML5-logo.png" alt="HTML5 logo" class="project__logo">
+                            <img src="img/tech-logos/react-logo.png" alt="React logo" class="project__logo">
+                            <p class="project__description">Responsive React/Next.js blog with GraphQL native Headless CMS</p>
+                            <p class="project__tech">JavaScript, CSS</p>
+                            <a class="btn btn--project btn--demo" href="https://main--cheery-gumption-d3484e.netlify.app/">Live Demo</a>
+                            <a class="btn btn--project btn--cta" href="https://github.com/nathanifill/react-blog">View Code</a>
+                        </div>
+                        <a class="project__img-container" href="https://main--cheery-gumption-d3484e.netlify.app/">
+                            <div class="project__img project__img--2">
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project project--3" id="project-3">
+                        <div class="project__info project__info--3">
+                            <img src="img/tech-logos/html5-logo.png" alt="HTML5 logo" class="project__logo">
                             <p class="project__description">Simple, one-page, static portfolio</p>
-                            <p class="project__tech">HTML, CSS, SCSS, JavaScript</p>
+                            <p class="project__tech">CSS, SCSS, HTML, JavaScript</p>
                             <a class="btn btn--project btn--demo" href="#top">Live Demo</a>
                             <a class="btn btn--project btn--cta" href="https://github.com/nathanifill/nathanifill.github.io">View Code</a>
                         </div>
                         <a class="project__img-container" href="#top">
-                            <div class="project__img project__img--2">
+                            <div class="project__img project__img--3">
 
                             </div>
                         </a>
@@ -125,20 +139,24 @@
                         <li class="unordered-list__list-item">JavaScript (ES6)</li>
                         <li class="unordered-list__list-item">HTML5</li>
                         <li class="unordered-list__list-item">CSS3 (Sass/SCSS)</li>
+                        <li class="unordered-list__list-item">SQL</li>
+                        <li class="unordered-list__list-item">React.js</li>
+                        <li class="unordered-list__list-item">Next.js</li>
+                        <li class="unordered-list__list-item">GraphQL</li>
                     </ul>
                     <p class="section__paragraph">
                         Below are some of the technologies that I'm currently learning.
                     </p>
                     <ul class="unordered-list unordered-list--skills">
                         <li class="unordered-list__list-item">Node.js</li>
-                        <li class="unordered-list__list-item">jQuery</li>
-                        <li class="unordered-list__list-item">React.js</li>
                         <li class="unordered-list__list-item">MongoDB</li>
                         <li class="unordered-list__list-item">Express</li>
+                        <li class="unordered-list__list-item">Python</li>
+                        <li class="unordered-list__list-item">TypeScript</li>
                     </ul>
 
                     <p class="section__paragraph">
-                        If you've read this far, why not connect with me? Click on the links to my <a href="https://github.com/nathanifill" class="section__link">GitHub</a>, <a href="https://stackoverflow.com/users/13510132/nathan-ifill" class="section__link">Stack Overflow</a> or <a href="https://www.linkedin.com/in/nathanifill/" class="section__link">LinkedIn</a> profile below.
+                        Since you've read this far, why not connect with me? Click on the links to my <a href="https://github.com/nathanifill" class="section__link">GitHub</a>, <a href="https://stackoverflow.com/users/13510132/nathan-ifill" class="section__link">Stack Overflow</a> or <a href="https://www.linkedin.com/in/nathanifill/" class="section__link">LinkedIn</a> profile below.
                     </p>
                     
                     <div class="socials">
@@ -162,54 +180,70 @@
                     <div class="skills-grid" id="skills-grid">
                         <div class="skills-grid__skill skills-grid__skill--1">
                             <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=html&sort=">
-                                <img src="./img/HTML5-logo.png" alt="HTML5" title="HTML5" class="skills-grid__img skills-grid__img--1">
+                                <img src="./img/tech-logos/html5-logo.png" alt="HTML5" title="HTML5" class="skills-grid__img skills-grid__img--1">
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--2">
                             <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=css&sort=">
-                                <img src="./img/css3-logo.png" alt="CSS3" title="CSS3" class="skills-grid__img skills-grid__img--2">
+                                <img src="./img/tech-logos/css3-logo.png" alt="CSS3" title="CSS3" class="skills-grid__img skills-grid__img--2">
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--3">
                             <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=javascript&sort=">
-                                <img src="./img/javascript-logo.png" alt="JavaScript" title="JavaScript" class="skills-grid__img skills-grid__img--3">
+                                <img src="./img/tech-logos/javascript-logo.png" alt="JavaScript" title="JavaScript" class="skills-grid__img skills-grid__img--3">
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--4">
-                            <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=javascript&sort=">
-                                <img src="./img/jquery-logo.png" alt="jQuery" title="jQuery" class="skills-grid__img skills-grid__img--4">
+                            <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=css&sort=">
+                                <img src="./img/tech-logos/sass-logo.png" alt="Sass" title="Sass" class="skills-grid__img skills-grid__img--4">
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--5">
                             <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=javascript&sort=">
-                                <img src="./img/react-logo.png" alt="React.js" title="React.js" class="skills-grid__img skills-grid__img--5">
+                                <img src="./img/tech-logos/react-logo.png" alt="React.js" title="React.js" class="skills-grid__img skills-grid__img--5">
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--6">
-                            <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=css&sort=">
-                                <img src="./img/sass-logo.png" alt="Sass" title="Sass" class="skills-grid__img skills-grid__img--6">
+                            <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=javascript&sort=">
+                                <img src="./img/tech-logos/nodejs-logo.png" alt="Node.js" title="Node.js" class="skills-grid__img skills-grid__img--6">                          
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--7">
                             <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=&sort=">
-                                <img src="./img/mongodb-logo.png" alt="mongoDB" title="MongoDB" class="skills-grid__img skills-grid__img--7">
+                                <img src="./img/tech-logos/mongodb-logo.png" alt="mongoDB" title="MongoDB" class="skills-grid__img skills-grid__img--7">
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--8">
                             <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=javascript&sort=">
-                                <img src="./img/expressjs-logo.png" alt="Express" title="Express" class="skills-grid__img skills-grid__img--8">
+                                <img src="./img/tech-logos/expressjs-logo.png" alt="Express" title="Express" class="skills-grid__img skills-grid__img--8">
                             </a>
                         </div>
                         <div class="skills-grid__skill skills-grid__skill--9">
-                            <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=javascript&sort=">
-                                <img src="./img/nodejs-logo.png" alt="Node.js" title="Node.js" class="skills-grid__img skills-grid__img--9">                          
+                            <a class="skills-grid__link" href="https://github.com/nathanifill?tab=repositories&q=&type=&language=python&sort=">
+                                <img src="./img/tech-logos/python-logo.png" alt="Python" title="Python" class="skills-grid__img skills-grid__img--9">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section section--contact" id="contact">
+            <div class="u-max-width">
+                <h2 class="heading heading--secondary">Contact me</h2>
+                <p class="section__paragraph">Thank you for checking out my portfolio. Feel free to get in touch - I'd love to hear from you. <a href="mailto:nathangifill+portfolio@gmail.com" class="section__link">Click here to send me an email now.</a></p>
+        </section>
     </main>
+    <footer class="footer">
+        <p>&copy; Copyright Nathan Ifill <span id="copyright-date">2XXX</span></p>
+    </footer>
+    <aside class="modal modal--hidden">
+        <div class="modal__overlay">
+            <div class="modal__text-container">
+                <a onclick="toggleModal()" class="modal__close">&times;</a>
+                <p class="modal__text"></p>
+            </div>
+        </div>
+    </aside>
     <script src="./js/script.js"></script>
 </body>
 </html>
