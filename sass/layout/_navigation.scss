@@ -3,19 +3,19 @@
   font-weight: 700;
   justify-content: space-between;
   left: 0;
-  position: absolute;
   padding: 2.5rem 5rem;
-  width: 100%;
+  position: absolute;
   top: 0;
+  width: 100%;
 
   &__home-icon {
     border-radius: 50%;
     box-shadow: 0 0 4rem rgba($color-white, 1);
     cursor: pointer;
-    max-height: 7rem;
     filter: grayscale(1) sepia(0.5) contrast(0.05) brightness(1.9) blur(1.1px);
-    transition: all 3s ease-in-out;
+    max-height: 7rem;
     transform: rotate(123deg);
+    transition: all 3s ease-in-out;
 
     &:hover {
       box-shadow: 0 0 1rem rgba($color-white, 1);
@@ -25,8 +25,8 @@
   }
 
   &__link {
-    display: inline-block;
     color: $color-white;
+    display: inline-block;
     letter-spacing: 0.2rem;
     text-align: center;
     text-decoration: none;
@@ -38,6 +38,7 @@
       content: "";
       display: block;
       height: 2px;
+      margin-top: 0.5rem;
       transition: width 0.4s ease-in-out;
       width: 0;
     }
@@ -48,12 +49,12 @@
   }
 
   &__list {
+    align-items: baseline;
     color: $color-white;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
     font-size: 1.6rem;
+    justify-content: flex-end;
   }
 
   &__list-item {
