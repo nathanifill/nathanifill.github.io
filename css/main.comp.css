@@ -288,6 +288,8 @@ body {
       background-image: url(../img/project-imgs/react-blog.png); }
     .project__img--3 {
       background-image: url(../img/project-imgs/portfolio-small.jpeg); }
+    .project__img--4 {
+      background-image: url(../img/project-imgs/budget-app.png); }
   .project__img-container {
     align-items: center;
     display: flex;
