@@ -390,7 +390,7 @@ body {
     filter: brightness(110%) drop-shadow(0 0 0.5rem rgba(255, 252, 249, 0.3));
     max-height: 10rem;
     max-width: 80%;
-    transition: all .5s ease-in-out; }
+    transition: all 0.5s ease-in-out; }
     .skills-grid__img:hover {
       transform: scale(1.05); }
   .skills-grid__link {
@@ -401,7 +401,7 @@ body {
     box-shadow: 0 0 2rem 0 rgba(11, 9, 13, 0.2);
     display: flex;
     justify-content: center;
-    transition: transform .5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform: rotateY(-25deg); }
     .skills-grid__skill:nth-of-type(odd) {
       background-color: #2667ff; }
