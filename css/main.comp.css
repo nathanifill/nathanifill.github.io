@@ -285,10 +285,12 @@ body {
     .project__img--1 {
       background-image: url(../img/project-imgs/swaplang-small.jpeg); }
     .project__img--2 {
-      background-image: url(../img/project-imgs/react-blog.png); }
+      background-image: url(../img/project-imgs/react-bug-tracker-app.png); }
     .project__img--3 {
-      background-image: url(../img/project-imgs/portfolio-small.jpeg); }
+      background-image: url(../img/project-imgs/react-blog.png); }
     .project__img--4 {
+      background-image: url(../img/project-imgs/portfolio-small.jpeg); }
+    .project__img--5 {
       background-image: url(../img/project-imgs/budget-app.png); }
   .project__img-container {
     align-items: center;
